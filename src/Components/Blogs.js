@@ -11,7 +11,7 @@ function Blogs() {
 
   useEffect(() => {
     const fetchPokemon = () => {
-      const url = `https://pokeapi.co/api/v2/pokemon/${name}`;
+      const url = `https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`;  //// เพื่อเปลี่ยนให้ข้อมูล API ไม่สนตัวใหญ่่ตัวเล็กเวลาค้น
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
