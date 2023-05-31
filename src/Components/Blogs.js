@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import "./Blogs.css";
 
 function Blogs() {
-  const [pokemon, setPokemon] = useState({});
+  const [pokemon, setPokemon] = useState([]);
   const [name, setName] = useState("ditto");
 
   useEffect(() => {
